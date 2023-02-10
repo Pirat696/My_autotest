@@ -1,0 +1,6 @@
+# created by virtualenv automatically
+.idea/
+__init__.py
+faker_test.py
+__pycache__/
+venv/
