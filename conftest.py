@@ -11,8 +11,8 @@ from used_data.post_data.created_user_data import pyload
 def get_bearer_token():
 
     data = {
-        "password": "password!",
-        "username": "username"
+        "password": "Ololo1503500!",
+        "username": "grafsimantika69@gmail.com"
     }
 
     response = requests.post(url=LOGIN_URL, data=data)
@@ -33,3 +33,5 @@ def post_creat_user(get_bearer_token):
                              headers=get_bearer_token, json=pyload)
     assert response.status_code == 201
     Model.parse_raw(response.text)
+    endpoint = response.json()["list"][0]["id"]
+    return endpoint
