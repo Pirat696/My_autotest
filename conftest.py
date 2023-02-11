@@ -27,7 +27,7 @@ def get_bearer_token():
 
 
 @pytest.fixture(scope="module")
-def post_creat_user(get_bearer_token):
+def post_create_user(get_bearer_token):
 
     response = requests.post(url=POST_CREAT_USER_URL,
                              headers=get_bearer_token, json=pyload)
