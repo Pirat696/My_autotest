@@ -1,12 +1,18 @@
 from faker import Faker
+from mimesis import Person
+
+person = Person('ru')
+
 fake = Faker('ru_RU')
+
+phone = person.telephone(mask="+7-9##-###-##-##")
 
 pyload = {
     "last_name": fake.last_name(),
     "first_name": fake.first_name(),
     "patronymic": fake.last_name(),
-    "phone": "+7 (969) 696-69-69",
-    "username": "+7 (969) 696-69-69",
+    "phone": phone,
+    "username": phone,
     "email": fake.email(),
     "extra": {
         "with_services": True,

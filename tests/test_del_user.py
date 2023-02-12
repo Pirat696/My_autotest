@@ -11,6 +11,7 @@ def test_checking_user_active(post_create_user, get_bearer_token):
     assert response.json()["list"][0]["is_active"] == True
 
 
+
 def test_del_user(post_create_user, get_bearer_token):
 
     delete_url = f"{POST_CREAT_USER_URL}{post_create_user}"
