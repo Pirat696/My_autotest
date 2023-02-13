@@ -11,8 +11,8 @@ from used_data.post_data.created_user_data import pyload
 def get_bearer_token():
 
     data = {
-        "password": "Ololo1503500!",
-        "username": "grafsimantika69@gmail.com"
+        "password": "password!",
+        "username": "@gmail.com"
     }
 
     response = requests.post(url=LOGIN_URL, data=data)
