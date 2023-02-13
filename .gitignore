@@ -4,3 +4,4 @@ __init__.py
 faker_test.py
 __pycache__/
 venv/
+conftest.py

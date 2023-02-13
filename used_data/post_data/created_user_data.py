@@ -5,7 +5,7 @@ person = Person('ru')
 
 fake = Faker('ru_RU')
 
-phone = person.telephone(mask="+7-9##-###-##-##")
+phone = person.telephone(mask="+7 9## ###-##-##")
 
 pyload = {
     "last_name": fake.last_name(),
